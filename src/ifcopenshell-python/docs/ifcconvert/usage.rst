@@ -47,7 +47,7 @@ IfcConvert can be used to convert only specific elements.
     # Convert only walls and slabs
     IfcConvert  --include entities IfcWall IfcSlab -v /path/to/input.ifc /path/to/output.glb
     # Convert only these two particular elements filtered by GlobalId
-    IfcConvert  --include attribute GlobalId 1yETHMphv6LwABqR4Pbs5g attribute GlobalId 1yETHMphv6LwABqR0Pbs5g -v /path/to/input.ifc /path/to/output.glb
+    IfcConvert  --include attribute GlobalId 1yETHMphv6LwABqR4Pbs5g 1yETHMphv6LwABqR0Pbs5g -v /path/to/input.ifc /path/to/output.glb
     # Convert all objects on level 1. Note how "+" is used.
     IfcConvert  --include+=attribute Name "Level 1" -v /path/to/input.ifc /path/to/output.glb
 
